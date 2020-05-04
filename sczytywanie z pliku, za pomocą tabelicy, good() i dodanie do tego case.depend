@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1588610626 source:c:\users\bartek\desktop\programy\nwm mo¿e uda siê\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<conio.h>
+
+1588610626 source:c:\users\bartek\desktop\programy\sczytywanie z pliku, za pomoc¹ tabeli, good() i dodanie do tego case\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+	<conio.h>
+
