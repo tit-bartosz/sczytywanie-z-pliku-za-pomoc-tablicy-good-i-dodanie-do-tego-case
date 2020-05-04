@@ -1,5 +1,5 @@
 #include <iostream>
-#include <fstream> //do przesyłania plików między sobš
+#include <fstream> //do przesyłania plików między soba
 #include <algorithm> //biblioteka do sortowania
 #include <conio.h> //do getch()
 using namespace std;
@@ -31,9 +31,9 @@ int main()
             odczyt >> tab[a];
             a++;
         }
-        sort(tab,tab+500); //użycie komendy która sortuje (zakres)
+        sort(tab,tab+500); //uzycie komendy ktora sortuje (zakres)
         cout << "Oto liczby posegregowane rosnaco: " << endl;
-        for(int i=0; i<500; i++) //ustawienie aktualne to sortowanie rosnšce
+        for(int i=0; i<500; i++) //ustawienie aktualne to sortowanie rosnace
         {
             cout << kropka++ <<". "<<tab[i] << endl;
         }
@@ -55,9 +55,9 @@ int main()
             odczyt >> tab[a];
             a++;
         }
-        sort(tab,tab+500); //użycie komendy która sortuje (zakres)
+        sort(tab,tab+500); //uzycie komendy ktora sortuje (zakres)
         cout << "Oto liczby posegregowane malejaco: " << endl;
-        for(int i=499; i>=0; i--) //ustawienie aktualne to sortowanie rosnšce
+        for(int i=499; i>=0; i--) //ustawienie aktualne to sortowanie rosnace
         {
             cout << kropka++ <<". " << tab[i] << endl;
         }
