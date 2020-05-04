@@ -1,5 +1,5 @@
 #include <iostream>
-#include <fstream> //do przesy≥ania plikÛw miÍdzy sobπ
+#include <fstream> //do przesy≈Çania plik√≥w miƒôdzy sob≈°
 #include <algorithm> //biblioteka do sortowania
 #include <conio.h> //do getch()
 using namespace std;
@@ -7,6 +7,7 @@ int a;
 int tab[500];
 int w;
 int c, d;
+int kropka=1;
 int main()
 {
     cout << "Witaj w programie Bartosza Osikowskiego" << endl << "Mamy w pliku tekstowym zapisanych 500 losowych liczb" << endl;
@@ -25,17 +26,18 @@ int main()
     {
     case 1:
         odczyt.open("liczby.txt",ios::in);
-        for(int j=0; j<500; j++)
+        for(int j=0; j<=500; j++)
         {
             odczyt >> tab[a];
             a++;
         }
-        sort(tab,tab+500); //uøycie komendy ktÛra sortuje (zakres)
+        sort(tab,tab+500); //u≈ºycie komendy kt√≥ra sortuje (zakres)
         cout << "Oto liczby posegregowane rosnaco: " << endl;
-        for(int i=0; i<500; i++) //ustawienie aktualne to sortowanie rosnπce
+        for(int i=0; i<500; i++) //ustawienie aktualne to sortowanie rosn≈°ce
         {
-            cout << tab[i] << endl;
+            cout << kropka++ <<". "<<tab[i] << endl;
         }
+        kropka=1;
 
         odczyt.close();
         cout << "Nacisnij dowolny przycisk, aby kontynuowac";
@@ -53,12 +55,14 @@ int main()
             odczyt >> tab[a];
             a++;
         }
-        sort(tab,tab+500); //uøycie komendy ktÛra sortuje (zakres)
+        sort(tab,tab+500); //u≈ºycie komendy kt√≥ra sortuje (zakres)
         cout << "Oto liczby posegregowane malejaco: " << endl;
-        for(int i=500; i>0; i--) //ustawienie aktualne to sortowanie rosnπce
+        for(int i=499; i>=0; i--) //ustawienie aktualne to sortowanie rosn≈°ce
         {
-            cout << tab[i] << endl;
+            cout << kropka++ <<". " << tab[i] << endl;
         }
+        kropka=1;
+
         odczyt.close();
         cout << "Nacisnij dowolny przycisk, aby kontynuowac";
         getch();
